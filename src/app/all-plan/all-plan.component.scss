@@ -1,0 +1,123 @@
+$purple: #AA55FF;
+$blue  : #584BDD;
+$green : #5ce67b;
+
+// header css start here 
+ion-header ion-toolbar:first-child {
+    --background: #AA55FF !important;
+}
+
+.header-md:after {
+    background-image: unset;
+}
+
+ion-menu-button {
+    --color: #fff;
+}
+
+ion-menu-button:hover {
+    --background-color: #AA55FF;
+}
+
+.header_sec {
+    widows : 100%;
+    display: inline;
+}
+
+.middle_sec {
+    font-size  : 18px;
+    font-weight: 500;
+}
+
+.home_text {
+    color      : #fff;
+    font-weight: 600;
+    margin-left: 12px;
+}
+
+// header css end here 
+
+// ION content START HERE
+ion-content {
+    --background: linear-gradient(#AA55FF, #584BDD);
+
+    &:after {
+        content              : "";
+        background-image     : url('../../assets/images/illustration.png');
+        background-repeat    : no-repeat;
+        background-position  : center 98%;
+        background-size      : contain;
+        background-attachment: fixed;
+        padding-right        : 100%;
+        padding-bottom       : 100vh;
+        z-index              : 1;
+        position             : absolute;
+    }
+}
+
+.all_plan {
+    padding : 0px 10px;
+    position: relative;
+    z-index : 11;
+
+    p {
+        font-size     : 18px;
+        margin-bottom : 8px;
+        text-transform: uppercase;
+    }
+
+    .card {
+        padding      : 10px;
+        display      : inline-block;
+        margin-bottom: 5px;
+        border-radius: 7px;
+
+        .select_plan {
+            margin-top: 3px;
+
+            ion-checkbox {
+                vertical-align        : middle;
+                --background-checked  : #A354FD;
+                --border-color-checked: #A354FD;
+            }
+
+            ion-label {
+                vertical-align: middle;
+                font-weight   : 600;
+            }
+        }
+
+        .plan_img {
+            height: 30px;
+            width : 30px;
+
+            i {
+                font-size   : 30px;
+                color       : #c7cbd6;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.select_for_continue {
+    padding : 15px 10px;
+    z-index : 11;
+    position: relative;
+
+    p {
+        font-weight: 500;
+        font-size  : 15px;
+    }
+
+    button {
+        margin-top      : 18px;
+        width           : 100%;
+        font-weight     : 500;
+        padding         : 11px;
+        border-radius   : 5px;
+        font-size       : 15px;
+        background-color: $green;
+        outline         : none;
+    }
+}

@@ -1,0 +1,91 @@
+$purple: #AA55FF;
+$blue  : #584BDD;
+$green : #2FE57C;
+
+// header css start here 
+
+ion-header ion-toolbar:first-child {
+    --background: #AA55FF !important;
+}
+
+.header-md:after {
+
+    background-image: unset;
+
+}
+
+ion-menu-button {
+    --color: #fff;
+}
+
+.middle_sec {
+    font-size  : 18px;
+    font-weight: 500;
+}
+
+.back_icon {
+    ion-img {
+        height    : 18px;
+        width     : 18px;
+        margin-top: 4px;
+    }
+}
+
+// header css end here 
+// content css start here
+ion-content {
+    --background: linear-gradient(#AA55FF, #584BDD) !important;
+
+    &:after {
+        content              : "";
+        background-image     : url('../../assets/images/illustration.png');
+        background-repeat    : no-repeat;
+        background-position  : center 98%;
+        background-size      : contain;
+        background-attachment: fixed;
+        padding-right        : 100%;
+        padding-bottom       : 100vh;
+        z-index              : 1;
+        position             : absolute;
+    }
+}
+
+.benefits_content {
+    padding : 0px 10px;
+    z-index : 11;
+    position: relative;
+}
+
+.country_name {
+    background-color: #fff;
+    display         : inline-block;
+    cursor          : pointer;
+    padding-left    : 18px;
+
+    img {
+        height: 50px;
+        width : 65px;
+    }
+
+    p {
+        color      : #434A5E;
+        font-size  : 15px;
+        font-weight: 600;
+        line-height: 50px;
+    }
+}
+
+.add_button {
+    a {
+        border-radius   : 50%;
+        background-color: #FA4D88;
+        position        : fixed;
+        bottom          : 33px;
+        right           : 10px;
+        padding         : 16px;
+
+        img {
+            height: 28px;
+        }
+    }
+}
