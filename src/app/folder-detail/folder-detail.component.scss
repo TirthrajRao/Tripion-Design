@@ -1,17 +1,13 @@
 $purple: #AA55FF;
-$blue  : #584BDD;
-$green : #2FE57C;
-
+$blue: #584BDD;
+$green: #2FE57C;
 // header css start here 
-
 ion-header ion-toolbar:first-child {
     --background: #AA55FF !important;
 }
 
 .header-md:after {
-
     background-image: unset;
-
 }
 
 ion-menu-button {
@@ -19,14 +15,14 @@ ion-menu-button {
 }
 
 .middle_sec {
-    font-size  : 18px;
+    font-size: 18px;
     font-weight: 500;
 }
 
 .back_icon {
     ion-img {
-        height    : 18px;
-        width     : 18px;
+        height: 18px;
+        width: 18px;
         margin-top: 4px;
     }
 }
@@ -35,57 +31,54 @@ ion-menu-button {
 // content css start here
 ion-content {
     --background: linear-gradient(#AA55FF, #584BDD) !important;
-
     &:after {
-        content              : "";
-        background-image     : url('../../assets/images/illustration.png');
-        background-repeat    : no-repeat;
+        content: "";
+        background-image: url('../../assets/images/illustration.png');
+        background-repeat: no-repeat;
         background-position: center bottom;
-        background-size      : contain;
+        background-size: contain;
         background-attachment: fixed;
-        padding-right        : 100%;
-        padding-bottom       : 100vh;
-        z-index              : 1;
-        position             : absolute;
+        padding-right: 100%;
+        padding-bottom: calc(100vh - 56px);
+        z-index: 1;
+        position: absolute;
     }
 }
 
 .all_content {
-    padding : 10px;
+    padding: 10px;
     position: relative;
-    z-index : 11;
+    z-index: 11;
 }
-.doc_details{
+
+.doc_details {
     margin-bottom: 25px;
-
-.doc_img {
-    padding: 15px 5px;
-    
-    ion-img {
-        height: 60px;
-    }
-
-    p {
-        text-align : center;
-        font-weight: 600;
-        margin-top : 18px;
-        line-height: 12px;
+    .doc_img {
+        padding: 15px 5px;
+        ion-img {
+            height: 60px;
+        }
+        p {
+            text-align: center;
+            font-weight: 600;
+            margin-top: 18px;
+            line-height: 12px;
+        }
     }
 }
-}
+
 .folder_detail {
-    width  : 100%;
+    width: 100%;
     padding: 10px;
     display: inline-block;
     margin-bottom: 10px;
-
     ion-img {
         width: 32px;
         float: left;
         margin-right: 10px;
         margin-top: 3px;
     }
-    p{
+    p {
         font-weight: 600;
         padding-top: 5px;
     }
