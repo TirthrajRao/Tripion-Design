@@ -1,33 +1,7 @@
 $purple: #AA55FF;
 $blue: #584BDD;
 $green: #2FE57C;
-// header css start here 
-ion-header ion-toolbar:first-child {
-    --background: #AA55FF !important;
-}
 
-.header-md:after {
-    background-image: unset;
-}
-
-ion-menu-button {
-    --color: #fff;
-}
-
-.middle_sec {
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.back_icon {
-    ion-img {
-        height: 18px;
-        width: 18px;
-        margin-top: 4px;
-    }
-}
-
-// header css end here
 // content css start here
 ion-content {
     --background: linear-gradient(#AA55FF, #584BDD) !important;
@@ -39,7 +13,7 @@ ion-content {
         background-size: contain;
         background-attachment: fixed;
         padding-right: 100%;
-        padding-bottom: 100vh;
+        padding-bottom: calc(100vh - 56px);
         z-index: 1;
         position: absolute;
     }

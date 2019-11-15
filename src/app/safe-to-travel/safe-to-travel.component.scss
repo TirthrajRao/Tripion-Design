@@ -1,53 +1,24 @@
 $purple: #AA55FF;
-$blue  : #584BDD;
+$blue: #584BDD;
 
-// header css start here 
-ion-header ion-toolbar:first-child {
-    --background: #AA55FF !important;
-}
-
-.header-md:after {
-
-    background-image: unset;
-
-}
-
-ion-menu-button {
-    --color: #fff;
-}
-
-.middle_sec {
-    font-size  : 18px;
-    font-weight: 500;
-}
-
-.back_icon {
-    ion-img {
-        height    : 18px;
-        width     : 18px;
-        margin-top: 4px;
-    }
-}
-
-// header css end here 
 // content css start here 
 ion-content {
     --background: linear-gradient(#AA55FF, #584BDD);
-
     &:after {
-        content              : "";
-        background-image     : url('../../assets/images/illustration.png');
-        background-repeat    : no-repeat;
+        content: "";
+        background-image: url('../../assets/images/illustration.png');
+        background-repeat: no-repeat;
         background-position: center bottom;
-        background-size      : contain;
+        background-size: contain;
         background-attachment: fixed;
-        padding-right        : 100%;
-        padding-bottom       : 100vh;
-        z-index              : 1;
-        position             : absolute;
+        padding-right: 100%;
+        padding-bottom: calc(100vh - 56px);
+        z-index: 1;
+        position: absolute;
     }
 }
-.benefits_content{
+
+.benefits_content {
     position: relative;
     z-index: 11;
     padding: 10px;
@@ -57,25 +28,21 @@ ion-content {
     margin-bottom: 12px;
     .card_header {
         border-bottom: 1px solid #C7CBD6;
-        padding      : 12px 15px;
-
+        padding: 12px 15px;
         p {
-            color      : #434A5E;
+            color: #434A5E;
             font-weight: 600;
             line-height: 26px;
         }
     }
-
     .card_body {
         padding: 6px 15px 20px 15px;
-
         p {
-            color      : #7F8DAB;
+            color: #7F8DAB;
             font-weight: 600;
             line-height: 40px;
-            font-size  : 14px;
+            font-size: 14px;
             border-bottom: 1px solid #C7CBD6;
         }
     }
-
 }

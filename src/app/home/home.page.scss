@@ -74,7 +74,7 @@ $blue  : #584BDD;
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain;
-    height: 100vh;
+    height: calc(100vh - 30px);
     background-attachment: fixed;
 }
 .bg_home {

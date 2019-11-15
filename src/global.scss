@@ -29,6 +29,10 @@
 
 
 // common css
+$purple: #AA55FF;
+$blue  : #584BDD;
+$green : #5ce67b;
+
 body,
 html,
 * {
@@ -50,6 +54,53 @@ ul {
     margin : 0;
 }
 
-.menu-inner {
-    border-radius: 0 1.7rem 1.7rem 0!important;
-  }
+// header css start here 
+ion-header ion-toolbar:first-child {
+    --background: #AA55FF !important;
+}
+
+.md,
+.ios,
+.wp {
+ page-home {
+   ion-header {
+        height: 40px;//by default 56px
+    }
+ }
+}
+
+.header-md:after {
+    background-image: unset;
+}
+
+ion-menu-button {
+    --color: #fff;
+}
+
+.middle_sec {
+    display        : flex;
+    justify-content: space-around;
+
+    ion-img {
+        height      : 22px;
+        width       : 22px;
+        float       : left;
+        margin-top  : 3px;
+        margin-right: 10px;
+    }
+
+    span {
+        font-size  : 7vw;
+        font-weight: 600;
+            }
+}
+
+.back_icon {
+    ion-img {
+        height    : 18px;
+        width     : 18px;
+        margin-top: 4px;
+    }
+}
+
+// header css end here
