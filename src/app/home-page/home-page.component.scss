@@ -17,6 +17,7 @@ ion-menu-button {
     color: #000;
     font-weight: 600;
     margin-left: 12px;
+    font-size: 7vw;
 }
 // ion header css end here
 // ion content css start here
@@ -37,7 +38,7 @@ ion-content {
 }
 
 .all_content {
-    padding-bottom: 20px;
+    padding: 20px 0px;
     position: relative;
     z-index: 11;
 }
@@ -56,13 +57,13 @@ ion-menu-button:hover {
             float: left;
         }
         span {
-            font-size: 18px;
+            font-size: 7vw;
             font-weight: 500;
         }
     }
     .city_name {
         p {
-            font-size: 18px;
+            font-size: 7vw;
             font-weight: 500;
         }
     }
@@ -78,7 +79,7 @@ ion-menu-button:hover {
         cursor: pointer;
     }
     .booking_details p {
-        font-size: 22px;
+        font-size: 8vw;
         font-weight: 300;
         margin-top: 15px;
     }
@@ -89,8 +90,8 @@ ion-menu-button:hover {
         li {
             color: #D9D9D9;
             list-style: none;
-            font-size: 11px;
-            line-height: 18px;
+            font-size: 4vw;
+            line-height: 1.8;
             position: relative;
             margin-left: 20px;
             &:after {

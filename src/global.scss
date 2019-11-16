@@ -59,15 +59,6 @@ ion-header ion-toolbar:first-child {
     --background: #AA55FF !important;
 }
 
-.md,
-.ios,
-.wp {
- page-home {
-   ion-header {
-        height: 40px;//by default 56px
-    }
- }
-}
 
 .header-md:after {
     background-image: unset;
